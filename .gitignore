@@ -1,12 +1,8 @@
 # Ignore docs files
 /_gh_pages/
-/site/.jekyll-metadata
-/site/docs/**/dist/
-
-# Ignore ruby/bundler files
-/.bundle/
-/vendor/
-/.ruby-version
+/_site/
+/site/static/**/dist/
+/site/resources/
 
 # Numerous always-ignore extensions
 *.diff

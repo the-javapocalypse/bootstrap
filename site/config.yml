@@ -1,0 +1,103 @@
+languageCode:           "en"
+title:                  "Bootstrap"
+baseURL:                "http://localhost:9001"
+enableInlineShortcodes: true
+
+pygmentsUseClasses:     true
+# you can use ```lang if you want too
+pygmentsCodeFences:     true
+
+buildDrafts:            true
+buildFuture:            true
+
+enableRobotsTXT:        true
+metaDataFormat:         "yaml"
+disableKinds:           ["404", "taxonomy", "taxonomyTerm", "RSS"]
+
+publishDir:             "../_gh_pages"
+archetypeDir:           "archetypes"
+contentDir:             "content"
+dataDir:                "data"
+layoutDir:              "layouts"
+staticDir:              "static"
+themesDir:              "themes"
+
+ignoreFiles:
+  - assets/scss/
+
+social:
+  twitter:              "getbootstrap"
+
+params:
+  description:          "The most popular HTML, CSS, and JS library in the world."
+  authors:              "Mark Otto, Jacob Thornton, and Bootstrap contributors"
+  social_image_path:    /assets/brand/bootstrap-social.png
+  social_logo_path:     /assets/brand/bootstrap-social-logo.png
+
+  current_version:      "4.2.1"
+  current_ruby_version: "4.2.1"
+  docs_version:         "4.2"
+  repo:                 "https://github.com/twbs/bootstrap"
+  slack:                "https://bootstrap-slack.herokuapp.com"
+  blog:                 "https://blog.getbootstrap.com"
+  expo:                 "https://expo.getbootstrap.com"
+  themes:               "https://themes.getbootstrap.com"
+
+  download:
+    source:             "https://github.com/twbs/bootstrap/archive/v4.2.1.zip"
+    dist:               "https://github.com/twbs/bootstrap/releases/download/v4.2.1/bootstrap-4.2.1-dist.zip"
+
+  cdn:
+    # See https://www.srihash.org for info on how to generate the hashes
+    css:                "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    css_hash:           "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    js:                 "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    js_hash:            "sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    js_bundle:          "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"
+    js_bundle_hash:     "sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    jquery:             "https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    jquery_hash:        "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    popper:             "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.5/umd/popper.min.js"
+    popper_hash:        "sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+menu:
+  docs:
+    # These are the docs' left sidebar's main menu entries
+    - identifier: getting-started
+      name: Getting started
+      url: /docs/4.2/getting-started/introduction/
+      weight: 1
+
+    - identifier: layout
+      name: Layout
+      url: /docs/4.2/layout/overview/
+      weight: 2
+
+    - identifier: content
+      name: Content
+      url: /docs/4.2/content/reboot/
+      weight: 3
+
+    - identifier: components
+      name: Components
+      url: /docs/4.2/components/alerts/
+      weight: 4
+
+    - identifier: utilities
+      name: Utilities
+      url: /docs/4.2/utilities/borders/
+      weight: 5
+
+    - identifier: extend
+      name: Extend
+      url: /docs/4.2/extend/icons/
+      weight: 6
+
+    - identifier: migration
+      name: Migration
+      url: /docs/4.2/migration/
+      weight: 7
+
+    - identifier: about
+      name: About
+      url: /docs/4.2/about/overview/
+      weight: 8

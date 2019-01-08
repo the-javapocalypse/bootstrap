@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="{{ if isset .Page.Params "description" }}{{ .Page.Params.description | markdownify }}{{ else }}{{ .Site.Params.description | markdownify }}{{ end }}">
+<meta name="author" content="{{ .Site.Params.authors }}">
+{{ .Hugo.Generator }}
+
+<meta name="docsearch:language" content="en">
+<meta name="docsearch:version" content="{{ .Site.Params.docs_version }}">
+
+<title>{{ if .IsHome }}{{ .Site.Title | markdownify }} · {{ .Site.Params.description | markdownify }}{{ else }}{{ .Title | markdownify }} · {{ .Site.Title | markdownify }}{{ end }}</title>
+
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{ partial "stylesheet" . }}
+{{ partial "favicons" . }}
+{{ partial "social" . }}
+{{ partial "analytics" . }}

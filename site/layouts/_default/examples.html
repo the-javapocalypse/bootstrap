@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en"{{ with .Page.Params.html_class }} class="{{ .Page.Params.html_class }}"{{ end }}>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="{{ .Site.Params.authors }}">
+    {{ .Hugo.Generator }}
+    <title>{{ .Page.Title | markdownify }} · {{ .Site.Title | markdownify }}</title>
+
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    {{ partial "stylesheet" . }}
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    {%- for css in page.extra_css %}
+    <!-- Custom styles for this template -->
+    <link href="{{ . }}" rel="stylesheet">
+    {%- endfor %}
+  </head>
+  <body{{ with .Page.Params.body_class }} class="{{ .Page.Params.body_class }}"{{ end }}>
+    {{ .Content }}
+
+    {{ if ne .Page.Params.include_js false }}
+      <script src="{{ .Site.Params.cdn.jquery }}" integrity="{{ .Site.Params.cdn.jquery_hash }}" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="{{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+
+      {{ if eq (getenv "HUGO_ENV") "production" }}
+        <script src="{{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/dist/js/bootstrap.bundle.min.js" integrity="{{ .Site.Params.cdn.js_bundle_hash }}" crossorigin="anonymous"></script>
+      {{ else }}
+        <script src="{{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/dist/js/bootstrap.bundle.js"></script>
+      {{ end }}
+
+      {%- for js in page.extra_js %}
+        <script src="{{ js }}"></script>
+      {%- endfor %}
+    {{ end }}
+  </body>
+</html>
