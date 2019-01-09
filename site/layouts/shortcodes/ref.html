@@ -1,0 +1,3 @@
+{{- $url := .Get 0 -}}
+
+{{- ref . (printf "%s/docs/%s%s" $.Site.BaseURL $.Site.Params.docs_version $url) -}}

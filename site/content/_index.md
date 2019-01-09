@@ -18,10 +18,10 @@ layout: home
         </p>
         <div class="row mx-n2">
           <div class="col-md px-2">
-            <a href="{{ .Site.BaseURL }}/docs/{{< param docs_version >}}/getting-started/introduction/" class="btn btn-lg btn-bd-primary w-100 mb-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Get started', 'Get started');">Get started</a>
+            <a href="{{< ref "/getting-started/introduction.md" >}}" class="btn btn-lg btn-bd-primary w-100 mb-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Get started', 'Get started');">Get started</a>
           </div>
           <div class="col-md px-2">
-            <a href="{{ .Site.BaseURL }}/docs/{{< param docs_version >}}/getting-started/download/" class="btn btn-lg btn-outline-secondary w-100 mb-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Download', 'Download {{< param current_version >}}');">Download</a>
+            <a href="{{% ref "/getting-started/download.md" %}}" class="btn btn-lg btn-outline-secondary w-100 mb-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Download', 'Download {{< param current_version >}}');">Download</a>
           </div>
         </div>
         <p class="text-muted mb-0">
