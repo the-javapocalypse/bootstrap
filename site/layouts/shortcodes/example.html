@@ -5,6 +5,12 @@
 {{- $input -}}
 </div>
 
-{{- $.Scratch.Set "input_filtered" (replaceRE "data-src=\"holder.js.+?\"" "src=\"...\"" $input) -}}
-{{- $.Scratch.Set "input_filtered" (replaceRE " class=\"\"" "" ($.Scratch.Get "input_filtered")) -}}
-{{ highlight ($.Scratch.Get "input_filtered") $lang "" }}
+{{/*
+<svg (class="bd-placeholder-img[\s\w-]+")[\w\W]+</svg>
+*/}}
+
+{{- $input_filtered := (replace $input "bd-placeholder-img-lg" "") -}}
+{{- $input_filtered := (replace $input_filtered "bd-placeholder-img" "") -}}
+{{- $input_filtered := (replace $input_filtered " class=\"\"" "") -}}
+{{- $input_filtered := (replaceRE "data-src=\"holder.js.+?\"" "src=\"...\"" $input_filtered) -}}
+{{ highlight $input_filtered $lang "" }}

@@ -12,14 +12,14 @@
 */}}
 
 {{- $title := .Get "title" | default "Generic Placeholder Image" -}}
-{{- $class := .Get "class" | default "" -}}
+{{- $class := .Get "class" -}}
 {{- $color := .Get "color" | default "#dee2e6" -}}
 {{- $background := .Get "background" | default "#868e96" -}}
 {{- $width := .Get "width" | default "100%" -}}
 {{- $height := .Get "height" | default "180" -}}
 {{- $text := .Get "text" | default $width -}}
 
-<svg class="bd-placeholder-img{{ if $class }} {{ $class }}{{ end }}" width="{{ $width }}" height="{{ $height }}" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+<svg class="bd-placeholder-img{{ with $class }} {{ . }}{{ end }}" width="{{ $width }}" height="{{ $height }}" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
   {{ if $title }}<title>{{ $title }}</title>{{ end }}
   <rect fill="{{ $background }}" width="100%" height="100%"/>
   {{ if $text }}<text fill="{{ $color }}" dy=".3em" x="50%" y="50%">{{ $text }}</text>{{ end }}
