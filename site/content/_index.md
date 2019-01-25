@@ -49,7 +49,7 @@ gem install bootstrap -v {{< param current_ruby_version >}}
 {{< /highlight >}}
 
     <hr class="half-rule">
-    <a class="btn btn-outline-primary" href="{{ .Site.BaseURL }}/docs/{{< param docs_version >}}/getting-started/download/">Read installation docs</a>
+    <a class="btn btn-outline-primary" href="/docs/{{< param docs_version >}}/getting-started/download/">Read installation docs</a>
   </div>
 
   <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
@@ -70,7 +70,7 @@ gem install bootstrap -v {{< param current_ruby_version >}}
 <script src="{{< param "cdn.js" >}}" integrity="{{< param "cdn.js_hash" >}}" crossorigin="anonymous"></script>
 {{< /highlight >}}
     <hr class="half-rule">
-    <a class="btn btn-outline-primary" href="{{ .Site.BaseURL }}/docs/{{< param docs_version >}}/layout/overview/">Explore the docs</a>
+    <a class="btn btn-outline-primary" href="/docs/{{< param docs_version >}}/layout/overview/">Explore the docs</a>
   </div>
 
   <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
@@ -80,9 +80,9 @@ gem install bootstrap -v {{< param current_ruby_version >}}
     <p>
       Take Bootstrap 4 to the next level with official premium themes—toolkits built on Bootstrap with new components and plugins, docs, and build tools.
     </p>
-    <img class="img-fluid mt-3 mx-auto" srcset="{{ .Site.BaseURL }}/docs/{{< param docs_version >}}/assets/img/bootstrap-themes.png,
-                                                {{ .Site.BaseURL }}/docs/{{< param docs_version >}}/assets/img/bootstrap-themes@2x.png 2x"
-                                        src="{{ .Site.BaseURL }}/docs/{{< param docs_version >}}/assets/img/bootstrap-themes.png" alt="Bootstrap Themes" width="500" height="200">
+    <img class="img-fluid mt-3 mx-auto" srcset="/docs/{{< param docs_version >}}/assets/img/bootstrap-themes.png,
+                                                /docs/{{< param docs_version >}}/assets/img/bootstrap-themes@2x.png 2x"
+                                        src="/docs/{{< param docs_version >}}/assets/img/bootstrap-themes.png" alt="Bootstrap Themes" width="500" height="200">
     <hr class="half-rule">
     <a href="{{< param themes >}}/" class="btn btn-outline-primary">Browse themes</a>
   </div>

@@ -162,10 +162,10 @@ Use spinners within buttons to indicate an action is currently processing or tak
 {{< /example >}}
 
 
-[color]:   {{ .Site.BaseURL }}/docs/{{< param docs_version >}}/utilities/colors/
-[display]: {{ .Site.BaseURL }}/docs/{{< param docs_version >}}/utilities/display/
-[flex]:    {{ .Site.BaseURL }}/docs/{{< param docs_version >}}/utilities/flex/
-[float]:   {{ .Site.BaseURL }}/docs/{{< param docs_version >}}/utilities/float/
-[margin]:  {{ .Site.BaseURL }}/docs/{{< param docs_version >}}/utilities/spacing/
-[sizing]:  {{ .Site.BaseURL }}/docs/{{< param docs_version >}}/utilities/sizing/
-[text]:    {{ .Site.BaseURL }}/docs/{{< param docs_version >}}/content/typography/
+[color]:   /docs/{{< param docs_version >}}/utilities/colors/
+[display]: /docs/{{< param docs_version >}}/utilities/display/
+[flex]:    /docs/{{< param docs_version >}}/utilities/flex/
+[float]:   /docs/{{< param docs_version >}}/utilities/float/
+[margin]:  /docs/{{< param docs_version >}}/utilities/spacing/
+[sizing]:  /docs/{{< param docs_version >}}/utilities/sizing/
+[text]:    /docs/{{< param docs_version >}}/content/typography/

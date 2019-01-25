@@ -131,7 +131,7 @@ Fancy larger or smaller pagination? Add `.pagination-lg` or `.pagination-sm` for
 
 ## Alignment
 
-Change the alignment of pagination components with [flexbox utilities]({{ .Site.BaseURL }}/docs/{{< param docs_version >}}/utilities/flex/).
+Change the alignment of pagination components with [flexbox utilities](/docs/{{< param docs_version >}}/utilities/flex/).
 
 {{< example html >}}
 <nav aria-label="Page navigation example">

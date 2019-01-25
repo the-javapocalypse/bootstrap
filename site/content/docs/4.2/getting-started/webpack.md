@@ -8,11 +8,11 @@ toc: true
 
 ## Installing Bootstrap
 
-[Install bootstrap]({{ .Site.BaseURL }}/docs/{{< param docs_version >}}/getting-started/download/#npm) as a Node.js module using npm.
+[Install bootstrap](/docs/{{< param docs_version >}}/getting-started/download/#npm) as a Node.js module using npm.
 
 ## Importing JavaScript
 
-Import [Bootstrap's JavaScript]({{ .Site.BaseURL }}/docs/{{< param docs_version >}}/getting-started/javascript/) by adding this line to your app's entry point (usually `index.js` or `app.js`):
+Import [Bootstrap's JavaScript](/docs/{{< param docs_version >}}/getting-started/javascript/) by adding this line to your app's entry point (usually `index.js` or `app.js`):
 
 {{< highlight js >}}
 import 'bootstrap';
@@ -36,7 +36,7 @@ to your `package.json` using `npm install --save jquery popper.js`.
 
 To enjoy the full potential of Bootstrap and customize it to your needs, use the source files as a part of your project's bundling process.
 
-First, create your own `_custom.scss` and use it to override the [built-in custom variables]({{ .Site.BaseURL }}/docs/{{< param docs_version >}}/getting-started/theming/). Then, use your main Sass file to import your custom variables, followed by Bootstrap:
+First, create your own `_custom.scss` and use it to override the [built-in custom variables](/docs/{{< param docs_version >}}/getting-started/theming/). Then, use your main Sass file to import your custom variables, followed by Bootstrap:
 
 {{< highlight scss >}}
 @import "custom";

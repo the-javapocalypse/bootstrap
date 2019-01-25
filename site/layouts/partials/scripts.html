@@ -2,9 +2,9 @@
 <script>window.jQuery || document.write('<script src="{{ .Site.BaseURL }}/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 
 {{ if eq (getenv "HUGO_ENV") "production" }}
-  <script src="{{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/dist/js/bootstrap.bundle.min.js" integrity="{{ .Site.Params.cdn.js_bundle_hash }}" crossorigin="anonymous"></script>
+  <script src="/docs/{{ .Site.Params.docs_version }}/dist/js/bootstrap.bundle.min.js" integrity="{{ .Site.Params.cdn.js_bundle_hash }}" crossorigin="anonymous"></script>
 {{ else }}
-  <script src="{{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/dist/js/bootstrap.bundle.js"></script>
+  <script src="/docs/{{ .Site.Params.docs_version }}/dist/js/bootstrap.bundle.js"></script>
 {{ end }}
 
 {{ if eq .Page.Layout "docs" }}
@@ -12,12 +12,12 @@
 {{ end }}
 
 {{ if eq (getenv "HUGO_ENV") "production" }}
-  <script src="{{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/assets/js/docs.min.js"></script>
+  <script src="/docs/{{ .Site.Params.docs_version }}/assets/js/docs.min.js"></script>
 {{ else }}
-  <script src="{{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/assets/js/vendor/anchor.min.js"></script>
-  <script src="{{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/assets/js/vendor/clipboard.min.js"></script>
-  <script src="{{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/assets/js/vendor/bs-custom-file-input.min.js"></script>
-  <script src="{{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/assets/js/src/application.js"></script>
-  <script src="{{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/assets/js/src/search.js"></script>
-  <script src="{{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/assets/js/src/ie-emulation-modes-warning.js"></script>
+  <script src="/docs/{{ .Site.Params.docs_version }}/assets/js/vendor/anchor.min.js"></script>
+  <script src="/docs/{{ .Site.Params.docs_version }}/assets/js/vendor/clipboard.min.js"></script>
+  <script src="/docs/{{ .Site.Params.docs_version }}/assets/js/vendor/bs-custom-file-input.min.js"></script>
+  <script src="/docs/{{ .Site.Params.docs_version }}/assets/js/src/application.js"></script>
+  <script src="/docs/{{ .Site.Params.docs_version }}/assets/js/src/search.js"></script>
+  <script src="/docs/{{ .Site.Params.docs_version }}/assets/js/src/ie-emulation-modes-warning.js"></script>
 {{ end }}
